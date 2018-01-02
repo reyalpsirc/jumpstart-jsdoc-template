@@ -1,6 +1,6 @@
 {
   "name": "jumpstartjs-jsdoc-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Jumpstart.js template for JSDoc 3",
   "dependencies": {
     "taffydb": "^2.7.2",
