@@ -236,6 +236,10 @@ function buildNav(members) {
                 classes: find({
                     kind: 'class',
                     memberof: v.longname
+                }),
+                classes: find({
+                    kind: 'module',
+                    memberof: v.longname
                 })
             });
         });
@@ -251,6 +255,37 @@ function buildNav(members) {
             interfaces: members.globals.filter(function(v) { return v.kind === 'interface'; }),
             events: members.globals.filter(function(v) { return v.kind === 'event'; }),
             classes: members.globals.filter(function(v) { return v.kind === 'class'; })
+        });
+    }
+
+    if (members.modules.length) {
+        _.each(members.modules, function (v) {
+            nav.push({
+                type: 'module',
+                longname: v.longname,
+                name: v.name,
+                deprecated: v.deprecated,
+                members: find({
+                    kind: 'member',
+                    memberof: v.longname
+                }),
+                methods: find({
+                    kind: 'function',
+                    memberof: v.longname
+                }),
+                typedefs: find({
+                    kind: 'typedef',
+                    memberof: v.longname
+                }),
+	            interfaces: find({
+                    kind: 'interface',
+                    memberof: v.longname
+                }),
+                events: find({
+                    kind: 'event',
+                    memberof: v.longname
+                })
+            });
         });
     }
 
@@ -478,7 +513,7 @@ exports.publish = function(taffyData, opts, tutorials) {
     // once for all
     view.nav = buildNav(members);
     attachModuleSymbols( find({ kind: ['class', 'function'], longname: {left: 'module:'} }),
-        members.modules );
+         members.modules );
 
     // only output pretty-printed source files if requested; do this before generating any other
     // pages, so the other pages can link to the source files

@@ -20,7 +20,7 @@ var self = this;
                     <span class="glyphicon glyphicon-<?js= (item.longname === 'global') ? 'globe' : 'folder-open' ?>"></span>
                 </span>
                 <?js } ?>
-                <?js= self.linkto(item.longname, item.longname === 'global' ? 'Global' : item.longname) ?>
+                <?js= self.linkto(item.longname, item.longname === 'global' ? 'Global' : item.name) ?>
             </span>
             <ul class="members itemMembers">
             <?js

@@ -7,7 +7,7 @@ var self = this;
         <h4 class="name" id="<?js= id ?>">
             <a class="share-icon" href="#<?js= id ?>"><span class="glyphicon glyphicon-link"></span></a>
             <span class="<?js= data.deprecated ? 'status-deprecated' : '' ?>">
-                <?js= (kind === 'class' ? 'new ' : '') + (data.scope === 'static' ? longname : name) ?>
+                <?js= (kind === 'class' ? 'new ' : '') + name ?>
             </span>
             <?js= (kind !== 'event' ? data.signature : '') ?>
             <?js if (data.deprecated) { ?>
