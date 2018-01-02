@@ -1,7 +1,7 @@
 {
-  "name": "@pixi/jsdoc-template",
-  "version": "2.4.0",
-  "description": "PixiJS template for JSDoc 3",
+  "name": "@jumpstart/jsdoc-template",
+  "version": "1.0.0",
+  "description": "Jumpstart.js template for JSDoc 3",
   "dependencies": {
     "taffydb": "^2.7.2",
     "underscore": "^1.7.0"
@@ -28,14 +28,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/pixijs/pixi-jsdoc-template.git"
+    "url": "git://github.com/paulfisher53/jumpstart-jsdoc-template.git"
   },
   "keywords": [
     "jsdoc",
     "jsdoc3",
-    "pixi.js",
-    "pixi",
-    "pixijs",
+    "jumpstart.js",
+    "jumpstart",
+    "jumpstartjs",
     "template"
   ],
   "files": [
@@ -44,10 +44,10 @@
     "publish.js",
     "plugins"
   ],
-  "author": "Matt Karl <matt@mattkarl.com>",
+  "author": "Paul Fisher <paulfisher53@gmail.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/pixijs/pixi-jsdoc-template/issues"
+    "url": "https://github.com/paulfisher53/jumpstart-jsdoc-template/issues"
   }
 }
