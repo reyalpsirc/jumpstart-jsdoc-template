@@ -8,7 +8,7 @@
 Install the template using NPM:
 
 ```bash
-npm install @jumpstart/jsdoc-template --save-dev
+npm install jumpstartjs-jsdoc-template --save-dev
 ```
 
 ## Usage
@@ -54,7 +54,7 @@ You can set options for customizing your documentations. Notice the `"template"`
         "private": false,
         "lenient": true,
         "destination": "./docs",
-        "template": "./node_modules/@jumpstart/jsdoc-template"
+        "template": "./node_modules/jumpstartjs-jsdoc-template"
     }
 }
 ```

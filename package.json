@@ -1,5 +1,5 @@
 {
-  "name": "@jumpstart/jsdoc-template",
+  "name": "jumpstartjs-jsdoc-template",
   "version": "1.0.0",
   "description": "Jumpstart.js template for JSDoc 3",
   "dependencies": {
