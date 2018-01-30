@@ -320,19 +320,6 @@ function buildNav(members) {
         });
     }
 
-    if (members.tutorials.length) {
-        _.each(members.tutorials, function(v) {
-            nav.push({
-                type: 'tutorial',
-                name: v.name,
-                longname: v.longname,
-                title: v.title,
-                children: v.children,
-                parent: v.parent
-            });
-        });
-    }
-
     return nav;
 }
 
