@@ -331,10 +331,6 @@ function buildNav(members) {
         });
     }
 
-    nav.forEach(function (item) {
-        console.log(item.name);
-    })    
-
     return nav;
 }
 
